@@ -1,0 +1,1 @@
+Make the extension swap local/remove URLs with a button or keyboard shortcut

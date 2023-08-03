@@ -1,0 +1,58 @@
+[
+	{
+		"id": 1,
+		"priority": 1,
+		"action": {
+			"type": "redirect",
+			"redirect": {
+				"regexSubstitution": "http://comp2.\\1:4567/\\2"
+			}
+		},
+		"condition": {
+			"regexFilter": "^https://comp\\.(.+)/(.*)===",
+			"resourceTypes": ["main_frame"]
+		}
+	},
+	{
+		"id": 2,
+		"priority": 1,
+		"action": {
+			"type": "redirect",
+			"redirect": {
+				"regexSubstitution": "https://comp.\\1/\\2"
+			}
+		},
+		"condition": {
+			"regexFilter": "^http://comp2\\.(.+):4567/(.*)===",
+			"resourceTypes": ["main_frame"]
+		}
+	},
+	{
+		"id": 3,
+		"priority": 1,
+		"action": {
+			"type": "redirect",
+			"redirect": {
+				"regexSubstitution": "http://winlocal.\\1/\\2"
+			}
+		},
+		"condition": {
+			"regexFilter": "^https://win\\.(.+)/(.*)===",
+			"resourceTypes": ["main_frame"]
+		}
+	},
+	{
+		"id": 4,
+		"priority": 1,
+		"action": {
+			"type": "redirect",
+			"redirect": {
+				"regexSubstitution": "https://win.\\1/\\2"
+			}
+		},
+		"condition": {
+			"regexFilter": "^http://winlocal\\.(.+)/(.*)===",
+			"resourceTypes": ["main_frame"]
+		}
+	}
+]

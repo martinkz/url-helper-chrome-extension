@@ -1,0 +1,27 @@
+{
+	"manifest_version": 3,
+	"name": "Global Competitions Development Helper",
+	"version": "1.0",
+	"declarative_net_request": {
+		"rule_resources": [
+			{
+				"id": "ruleset_1",
+				"enabled": true,
+				"path": "rules.json"
+			}
+		]
+	},
+	"permissions": ["declarativeNetRequestWithHostAccess"],
+	"host_permissions": [
+		"*://*.capitalfm.com/*",
+		"*://*.heart.co.uk/*",
+		"*://*.radiox.co.uk/*",
+		"*://*.classicfm.com/*",
+		"*://*.capitalxtra.com/*",
+		"*://*.lbc.co.uk/*",
+		"*://*.mygoldmusic.co.uk/*",
+		"*://*.smoothradio.com/*",
+		"*://*.bigtop40.com/*",
+		"*://*.classicfm.com/*"
+	]
+}
