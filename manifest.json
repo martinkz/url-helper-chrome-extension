@@ -11,7 +11,10 @@
 			}
 		]
 	},
-	"permissions": ["declarativeNetRequestWithHostAccess"],
+	"background": {
+		"service_worker": "service_worker.js"
+	},
+	"permissions": ["declarativeNetRequestWithHostAccess", "tabs", "activeTab", "scripting"],
 	"host_permissions": [
 		"*://*.capitalfm.com/*",
 		"*://*.heart.co.uk/*",
@@ -23,5 +26,14 @@
 		"*://*.smoothradio.com/*",
 		"*://*.bigtop40.com/*",
 		"*://*.classicfm.com/*"
-	]
+	],
+	"action": {},
+	"commands": {
+		"_execute_action": {
+			"suggested_key": {
+				"default": "Ctrl+U",
+				"mac": "Command+U"
+			}
+		}
+	}
 }
