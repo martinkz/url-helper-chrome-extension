@@ -4,7 +4,7 @@ chrome.runtime.onInstalled.addListener(() => {
 
 // Console.log is visible in the service worker's dev tools console
 chrome.action.onClicked.addListener((tab) => {
-	let newUrl;
+	let newUrl = false;
 
 	if (tab.url.startsWith("https://comp.")) {
 		newUrl = tab.url.replace(/https:\/\/comp\.(.+?)\/(.*)/, "http://comp2.$1:4567/$2");
