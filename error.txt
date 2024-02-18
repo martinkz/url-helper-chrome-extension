@@ -1,0 +1,1 @@
+If you're getting an error adding the extension to Chrome, try removing the _metadata folder
